@@ -1,0 +1,11 @@
+.Barra{
+    margin: auto;
+    width: 15%;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.Nombre{
+    font-size: 72px;
+}

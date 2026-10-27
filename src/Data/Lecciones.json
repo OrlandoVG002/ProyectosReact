@@ -1,0 +1,27 @@
+[
+    {
+        "Leccion": "Lección 1",
+        "Desafio": "Desafío 1",
+        "url": "/"
+    },
+    {
+        "Leccion": "Lección 2",
+        "Desafio": "Desafío 1",
+        "url": "/D02_01API"
+    },
+    {
+        "Leccion": "Lección 3",
+        "Desafio": "Desafío 1",
+        "url": "/D03_01Map"
+    },
+    {
+        "Leccion": "Lección 4",
+        "Desafio": "Desafío 1",
+        "url": "/D04_01Router"
+    },
+    {
+        "Leccion": "Lección 5",
+        "Desafio": "Desafío 1",
+        "url": "/D05_01Context"
+    }
+]
