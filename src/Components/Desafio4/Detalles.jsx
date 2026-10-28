@@ -2,7 +2,20 @@ import { useParams } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import { useUserDetails } from "./useUserDetails.js";
 
-/** Carga y presenta los detalles del usuario identificado en la URL. */
+
+/** 
+* @typedef {Object} id 
+* @property {string} id - Identificador del usuario obtenido desde la API
+*/
+
+/** 
+ * @typedef {Object} useUserDetails
+ * @property {Object} user - Los datos del usuario cargado.
+ * @property {boolean} loading - Indicador del estado de carga de la API.
+ * @property {string} error - Mensaje de error en caso de fallo.
+*/
+
+/** Carga y presenta una Card con los detalles del usuario identificado */
 export function Desafio04_01Details(){
     const { id } = useParams();
     const { user, loading, error } = useUserDetails(id);

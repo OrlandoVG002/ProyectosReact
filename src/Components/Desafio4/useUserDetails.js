@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
 
-/** @constant {string} URL base de la API de usuarios. */
 const url = "https://jsonplaceholder.typicode.com/users";
 
 /**
- * Consulta los detalles de un usuario específico.
- * @param {string|undefined} userId ID del usuario recibido desde la ruta.
- * @returns {{user: object|null, loading: boolean, error: string}} Estado y resultado de la consulta.
- */
+ * @typedef {Object} useUserDetailsResult
+ * @property {Object} users - Datos del los usuarios
+ * @property {boolean} loading - Estado de carga de la peticion HTTP en proceso
+ * @property {string} error - Mensaje de error en caso de que la peticion falle
+*/
+
+/**
+ * Hook personalizado para consultar de forma asincrona los datos de 1 usuario a la vez
+ * 
+ * @returns {useUserDetailsResult} Objeto con el estado actual de la peticion, datos encontrados, carga y errores.
+*/
 export function useUserDetails(userId) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);

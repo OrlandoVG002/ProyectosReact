@@ -1,9 +1,15 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from './ThemeContext';
+import React from 'react';
+import useTheme from './useTheme';
 
-/** Muestra el tema actual y permite alternarlo desde la interfaz. */
+/**
+ * @typedef {Object} useContext
+ * @property {String} theme - Tema de estilos
+ * @property {String} ThemeContext - Tema usado actualmente
+*/
+
+/** Muestra el tema actual y da un boton para alternarlo desde la interfaz */
 export function Desafio05_01Switch(){
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { theme, toggleTheme } = useTheme();
 
     return(
         <div className='my-3'>

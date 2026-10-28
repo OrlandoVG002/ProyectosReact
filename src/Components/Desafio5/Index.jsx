@@ -4,9 +4,16 @@ import {Desafio05_01Bloque1 as Bloque1} from "./Bloque1.jsx"
 import {Desafio05_01Switch as ThemeSwitch} from "./ThemeSwitch.jsx"
 import { ThemeProvider } from './ThemeContext.jsx';
 
-/** Renderiza la introducción y los controles del desafío sobre Context. */
+/** 
+ * @type {Object} Desafio - Objeto con el titulo y la descripcion del desafio actual
+ * @property {string} title - Titulo principal del desafio actual
+ * @property {string} desc - Descripcion del ejercicio
+*/
+
+/**
+ * Renderiza unos bloques los cuales cambian de estilo dependiendo del "ThemeContext"
+*/
 export function Desafio05_01Context(){
-    /** @type {{title: string, desc: string}} Información descriptiva del desafío. */
     const Desafio = {
         title: "Desafio 5: Context",
         desc: "Se usa el context para cambiar el tema de un componente desde otro componente"

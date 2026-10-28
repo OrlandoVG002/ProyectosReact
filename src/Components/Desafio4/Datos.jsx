@@ -2,8 +2,10 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 /**
- * Muestra el nombre de un usuario y un enlace a su página de detalles.
- * @param {{user: object}} props Propiedades del componente.
+ * Muestra el nombre de un usuario y un enlace a su pagina de detalles.
+ * @param {Object} props - Props del componente
+ * @param {string} props.user.name - Nombre completo del usuario
+ * @param {string} props.user.id - Identificador de usuario
  */
 export function Desafio04_01Datos({user}){
     return(
